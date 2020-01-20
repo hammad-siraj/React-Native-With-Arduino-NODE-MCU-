@@ -43,6 +43,7 @@ ledController =()=>{
       <View style={styles.header}>
         <Text style={styles.headerText}>COFFEE SHOP</Text>
       </View>
+     
       <View style={styles.container}>
         <Text>
           INSTRUCTIONS:
@@ -51,16 +52,19 @@ ledController =()=>{
             *PLEASE PUT A CUP TO GET YOUR FAVOURITE COFFEE
           </Text>
       </View>
+     
       <View style={styles.image}>
          <Image source={require('./images/coffeeCup.png')} style={{  backgroundColor: '#faf5e4'}}/>
       </View>
+     
       <View style={styles.container}>
-  <Text >MACHINE IS {`${isOpen? "ON":"OFF"}`}</Text> 
-      <TouchableOpacity onPress={this.ledController} style={[styles.button]}>
-            <Text style={[styles.text]}>{`TAP HERE TO GET YOUR COFFEE`}</Text>
+          <Text >MACHINE IS {`${isOpen? "ON":"OFF"}`}</Text> 
+        <TouchableOpacity onPress={this.ledController} style={[styles.button]}>
+              <Text style={[styles.text]}>{`TAP HERE TO GET YOUR COFFEE`}</Text>
         </TouchableOpacity>
-    <Text></Text>    
-    </View>
+          
+          <Text></Text>    
+      </View>
       </>
     )
   }
