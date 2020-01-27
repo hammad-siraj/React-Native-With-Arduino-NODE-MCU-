@@ -1,4 +1,4 @@
-//Visit www.roboshala.com for more details on NodeMCU and other projects.
+
 
 #include <ESP8266WiFi.h>
 
